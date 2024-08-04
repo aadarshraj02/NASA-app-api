@@ -30,7 +30,7 @@ const App = () => {
         console.log(error);
       }
     };
-    // fetchApiData();
+    fetchApiData();
   }, []);
 
   return (
