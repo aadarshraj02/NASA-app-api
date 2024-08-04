@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
 
 const App = () => {
+  const NASA_KEY = import.meta.env.VITE_NASA_API_KEY;
   const [showModal, setShowModal] = useState(false);
 
   const handleDisplayModal = () => {
