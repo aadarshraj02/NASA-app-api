@@ -5,8 +5,8 @@ import Sidebar from "./components/Sidebar";
 const App = () => {
   return (
     <div className="flex min-h-screen">
-      <Sidebar></Sidebar>
       <Main />
+      <Sidebar></Sidebar>
       <Footer />
     </div>
   );
