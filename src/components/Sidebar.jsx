@@ -9,11 +9,7 @@ const Sidebar = ({ handleClose, data }) => {
         </h2>
         <div className="flex-1">
           <p className="text-xl text-zinc-300">Description</p>
-          <p className="text-sm leading-none">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aut
-            quia vitae mollitia culpa facilis, sapiente atque. Debitis, soluta
-            et.
-          </p>
+          <p className="text-sm text-justify">{data?.explanation}</p>
         </div>
         <button
           className="bg-red-500 text-white outline-none cursor-pointer z-50 flex items-center justify-center px-2 py-0.5 rounded"
