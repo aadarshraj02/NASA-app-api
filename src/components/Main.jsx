@@ -1,8 +1,9 @@
-const Main = () => {
+const Main = (props) => {
+  const { data } = props;
   return (
     <div className="flex flex-col">
       <img
-        src="mars.png"
+        src={data.hdurl}
         alt=""
         className="w-full h-full flex-1 object-cover"
       />
