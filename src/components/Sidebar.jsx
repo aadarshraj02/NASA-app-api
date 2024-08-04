@@ -14,7 +14,7 @@ const Sidebar = () => {
             et.
           </p>
         </div>
-        <button className="bg-transparent text-white outline-none mr-auto">
+        <button className="bg-transparent text-white outline-none mr-auto cursor-pointer z-10">
           <IoClose />
         </button>
       </div>
