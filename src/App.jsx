@@ -10,10 +10,14 @@ const App = () => {
     setShowModal(!showModal);
   };
 
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="flex min-h-screen">
       <Main />
-      {showModal && <Sidebar />}
+      {showModal && <Sidebar handleClose={handleCloseModal} />}
       <Footer handleDisplayModal={handleDisplayModal} />
     </div>
   );

@@ -1,5 +1,6 @@
 import { IoClose } from "react-icons/io5";
-const Sidebar = () => {
+
+const Sidebar = ({ handleClose }) => {
   return (
     <div className="fixed inset-0 flex flex-col text-zinc-400">
       <div className="flex flex-col gap-4 p-4 h-full w-[40%] max-w-[800px] ml-auto bg-zinc-800 overflow-y-scroll">
@@ -14,9 +15,12 @@ const Sidebar = () => {
             et.
           </p>
         </div>
-        <button className="bg-transparent text-white outline-none mr-auto cursor-pointer z-50 bg-red-500 flex items-center justify-center px-2 py-0.5 rounded ">
+        <button
+          className="bg-red-500 text-white outline-none cursor-pointer z-50 flex items-center justify-center px-2 py-0.5 rounded"
+          onClick={handleClose}
+        >
           Close
-          <IoClose className="cursor-pointer" />
+          <IoClose className="ml-1" />
         </button>
       </div>
     </div>
