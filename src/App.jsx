@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import Loading from "./components/Loading";
 
 const App = () => {
