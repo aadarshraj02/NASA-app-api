@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 const Sidebar = ({ handleClose, data }) => {
   return (
     <div className="fixed inset-0 flex flex-col text-zinc-400">
-      <div className="flex flex-col gap-4 p-4 h-full w-[40%] max-w-[800px] ml-auto bg-zinc-800 overflow-y-scroll">
+      <div className="flex flex-col gap-4 p-4 h-full w-[80%] sm:w-[40%] ml-auto bg-zinc-800 overflow-y-scroll">
         <h2 className="text-3xl text-center text-zinc-200 font-bold">
           {data?.title}
         </h2>
