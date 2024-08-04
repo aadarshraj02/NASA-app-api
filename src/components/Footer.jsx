@@ -1,9 +1,14 @@
 const Footer = () => {
   return (
-    <div>
-      <h2>The Brutal Martin Landscape</h2>
-      <h1>APOD Project</h1>
-    </div>
+    <footer>
+      <div>
+        <h2>The Brutal Martin Landscape</h2>
+        <h1>APOD Project</h1>
+      </div>
+      <div>
+        <button></button>
+      </div>
+    </footer>
   );
 };
 
