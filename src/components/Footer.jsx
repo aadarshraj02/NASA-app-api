@@ -1,3 +1,5 @@
+import { BsInfoCircleFill } from "react-icons/bs";
+
 const Footer = () => {
   return (
     <footer>
@@ -6,7 +8,9 @@ const Footer = () => {
         <h1>APOD Project</h1>
       </div>
       <div>
-        <button></button>
+        <button>
+          <BsInfoCircleFill />
+        </button>
       </div>
     </footer>
   );
