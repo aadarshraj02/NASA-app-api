@@ -1,3 +1,4 @@
+import { IoClose } from "react-icons/io5";
 const Sidebar = () => {
   return (
     <div className="fixed inset-0 flex flex-col">
@@ -11,6 +12,9 @@ const Sidebar = () => {
             et.
           </p>
         </div>
+        <button>
+          <IoClose />
+        </button>
       </div>
     </div>
   );
