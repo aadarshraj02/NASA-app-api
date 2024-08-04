@@ -24,6 +24,7 @@ const App = () => {
       try {
         const res = await fetch(url);
         const apiData = await res.json();
+        setData(apiData);
       } catch (error) {
         console.log(error);
       }
