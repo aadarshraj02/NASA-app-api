@@ -13,8 +13,8 @@ const App = () => {
   return (
     <div className="flex min-h-screen">
       <Main />
-      {showModal && <Sidebar></Sidebar>}
-      <Footer showModal={showModal} />
+      {showModal && <Sidebar />}
+      <Footer handleDisplayModal={handleDisplayModal} />
     </div>
   );
 };
