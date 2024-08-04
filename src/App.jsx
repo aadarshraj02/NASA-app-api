@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
@@ -34,7 +35,13 @@ const App = () => {
 
   return (
     <div className="flex min-h-screen">
-      <Main />
+      {data ? (
+        <Main />
+      ) : (
+        <div>
+          <AiOutlineLoading3Quarters />
+        </div>
+      )}
       {showModal && <Sidebar handleClose={handleCloseModal} />}
       <Footer handleDisplayModal={handleDisplayModal} />
     </div>
