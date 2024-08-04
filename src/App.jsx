@@ -30,7 +30,7 @@ const App = () => {
         console.log(error);
       }
     };
-    fetchApiData();
+    // fetchApiData();
   }, []);
 
   return (
@@ -38,8 +38,8 @@ const App = () => {
       {data ? (
         <Main />
       ) : (
-        <div>
-          <AiOutlineLoading3Quarters />
+        <div className="flex items-center justify-center h-screen w-full bg-zinc-800">
+          <AiOutlineLoading3Quarters className="text-6xl text-zinc-500" />
         </div>
       )}
       {showModal && <Sidebar handleClose={handleCloseModal} />}
