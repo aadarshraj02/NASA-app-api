@@ -1,5 +1,9 @@
 const Main = () => {
-  return <div></div>;
+  return (
+    <div>
+      <img src="/bgImage.avif" alt="" />
+    </div>
+  );
 };
 
 export default Main;
