@@ -27,6 +27,7 @@ const App = () => {
         console.log(error);
       }
     };
+    fetchApiData();
   }, []);
 
   return (
