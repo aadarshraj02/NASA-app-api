@@ -5,11 +5,16 @@ import Sidebar from "./components/Sidebar";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const handleDisplayModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <div className="flex min-h-screen">
       <Main />
       {showModal && <Sidebar></Sidebar>}
-      <Footer />
+      <Footer showModal={showModal} />
     </div>
   );
 };
