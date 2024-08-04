@@ -8,7 +8,7 @@ const Sidebar = ({ handleClose, data }) => {
           {data?.title}
         </h2>
         <div className="flex-1">
-          <p className="text-xl text-zinc-300">Description</p>
+          <p className="text-xl text-zinc-300">{data?.date}</p>
           <p className="text-sm text-justify">{data?.explanation}</p>
         </div>
         <button
