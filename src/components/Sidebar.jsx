@@ -14,8 +14,9 @@ const Sidebar = () => {
             et.
           </p>
         </div>
-        <button className="bg-transparent text-white outline-none mr-auto cursor-pointer z-10">
-          <IoClose />
+        <button className="bg-transparent text-white outline-none mr-auto cursor-pointer z-50 bg-red-500 flex items-center justify-center px-2 py-0.5 rounded ">
+          Close
+          <IoClose className="cursor-pointer" />
         </button>
       </div>
     </div>
