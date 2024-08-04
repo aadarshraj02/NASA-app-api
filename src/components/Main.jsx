@@ -1,7 +1,7 @@
 const Main = () => {
   return (
     <div>
-      <img src="/bgImage.avif" alt="" />
+      <img src="mars.png" alt="" />
     </div>
   );
 };
