@@ -1,7 +1,11 @@
 const Main = () => {
   return (
-    <div>
-      <img src="mars.png" alt="" />
+    <div className="flex flex-col">
+      <img
+        src="mars.png"
+        alt=""
+        className="w-full h-full flex-1 object-cover"
+      />
     </div>
   );
 };
