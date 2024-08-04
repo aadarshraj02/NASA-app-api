@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
-    <div>
+    <div className="flex min-h-screen">
       <Sidebar></Sidebar>
       <Main />
       <Footer />
