@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <div className="flex min-h-screen">
-      {data ? <Main /> : <Loading />}
+      {data ? <Main data={data} /> : <Loading />}
       {showModal && <Sidebar handleClose={handleCloseModal} data={data} />}
       {data && <Footer handleDisplayModal={handleDisplayModal} data={data} />}
     </div>
